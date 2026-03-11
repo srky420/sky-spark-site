@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SkySpark</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { slate: { 950: '#0f172a', 900: '#1e293b' }, blue: { 600: '#3b82f6' } } } }
+        }
+    </script>
+    <!-- Assets -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body class="bg-slate-950 text-slate-50">
+
+    <div id="header-placeholder"></div>
+
+    <main class="pt-32 pb-32">
+        <section class="container mx-auto px-6 mb-24">
+            <div class="max-w-3xl" data-aos="fade-up">
+                <h1 class="text-5xl md:text-7xl font-black mb-8 text-gradient">Let's Connect</h1>
+                <p class="text-xl text-slate-400">
+                    Have a vision? We have the tools to build it. Reach out today and start your journey toward digital excellence.
+                </p>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                
+                <!-- Left: Form -->
+                <div class="glass-card p-12 rounded-3xl" data-aos="fade-right">
+                    <form id="contact-form" class="space-y-8">
+                        <div class="relative group">
+                            <input type="text" id="name" required class="contact-input peer" placeholder=" ">
+                            <label for="name" class="contact-label">Full Name</label>
+                        </div>
+                        <div class="relative group">
+                            <input type="email" id="email" required class="contact-input peer" placeholder=" ">
+                            <label for="email" class="contact-label">Email Address</label>
+                        </div>
+                        <div class="relative group">
+                            <input type="tel" id="phone" class="contact-input peer" placeholder=" ">
+                            <label for="phone" class="contact-label">Phone Number</label>
+                        </div>
+                        <div class="relative group">
+                            <textarea id="message" rows="5" required class="contact-input peer" placeholder=" "></textarea>
+                            <label for="message" class="contact-label">Project Details</label>
+                        </div>
+                        <button type="submit" class="btn-primary w-full py-5 flex items-center justify-center gap-3">
+                            Send Message <i data-lucide="send" class="w-5 h-5"></i>
+                        </button>
+                    </form>
+                    <div id="form-feedback" class="mt-6 hidden p-4 rounded-xl text-center font-bold"></div>
+                </div>
+
+                <!-- Right: Details -->
+                <div class="space-y-12" data-aos="fade-left">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-8">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-6">
+                                <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 shrink-0">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-1">Email Us</h4>
+                                    <p class="text-slate-400">hello@skyspark.tech</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-6">
+                                <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 shrink-0">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-1">Call Us</h4>
+                                    <p class="text-slate-400">+1 (555) 000-SKYS</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-6">
+                                <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 shrink-0">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-1">Office</h4>
+                                    <p class="text-slate-400">123 Tech Avenue, Silicon Valley, CA 94043</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="relative w-full aspect-video rounded-3xl overflow-hidden glass-card border-none">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80')] bg-cover opacity-30 grayscale invert"></div>
+                        <div class="absolute inset-0 flex items-center justify-center flex-col text-center p-8">
+                             <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white mb-4 animate-pulse">
+                                <i data-lucide="map-pin" class="w-8 h-8"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-2">Google Maps Placeholder</h4>
+                            <p class="text-slate-400 max-w-xs">Our headquarters are located in the heart of the innovation district.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>

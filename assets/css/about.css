@@ -1,0 +1,13 @@
+/* About Page Specific Styles */
+
+.font-serif {
+    font-family: 'Playfair Display', serif; /* Signature-like font simulation */
+}
+
+.glass-card {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+    transform: scale(1.02);
+}

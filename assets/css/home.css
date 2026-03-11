@@ -1,0 +1,52 @@
+/* Home Page Specific Styles */
+
+.hero-gradient-text {
+    background: linear-gradient(135deg, #ffffff 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.scroll-animation {
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.service-card-icon {
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glass-card:hover .service-card-icon {
+    transform: scale(1.1) rotate(5deg);
+    background-color: rgba(59, 130, 246, 0.2);
+}
+
+/* Feature Grid Borders */
+.feature-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+}
+
+.feature-item:hover::after {
+    width: 100%;
+}
+
+/* Particles Canvas */
+#hero-particles {
+    pointer-events: none;
+    opacity: 0.6;
+}

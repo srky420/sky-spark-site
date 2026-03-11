@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | SkySpark</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { slate: { 950: '#0f172a', 900: '#1e293b' }, blue: { 600: '#3b82f6' } } } }
+        }
+    </script>
+    <!-- Assets -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+</head>
+<body class="bg-slate-950 text-slate-50">
+
+    <div id="header-placeholder"></div>
+
+    <main class="pt-32">
+        <section class="container mx-auto px-6 mb-24">
+            <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+                <h1 class="text-5xl md:text-7xl font-black mb-8 text-gradient">Expertise at Scale</h1>
+                <p class="text-xl text-slate-400">
+                    We offer a wide range of specialized technology services, each tailored to solve specific business challenges with precision and innovation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Service Cards Grid -->
+        <section class="container mx-auto px-6 pb-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Web Development -->
+                <div class="glass-card p-10 rounded-3xl group relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center text-blue-500 mb-8 service-icon-box">
+                        <i data-lucide="globe" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Web Development</h3>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        High-performance React/Next.js/Vue applications, scalable backend architectures, and robust APIs.
+                    </p>
+                    <div class="space-y-3 mb-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <li class="flex items-center gap-2 text-sm text-slate-300"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> SPA & PWA Development</li>
+                        <li class="flex items-center gap-2 text-sm text-slate-300"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> Headless CMS Integration</li>
+                    </div>
+                    <button class="w-full py-4 border border-slate-700 rounded-xl font-semibold hover:border-blue-500 hover:text-blue-500 transition-all flex items-center justify-center gap-2">
+                        Learn More <i data-lucide="plus" class="w-4 h-4"></i>
+                    </button>
+                    <div class="absolute inset-0 bg-blue-600/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 -z-10"></div>
+                </div>
+
+                <!-- Mobile App Development -->
+                <div class="glass-card p-10 rounded-3xl group relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center text-blue-500 mb-8 service-icon-box">
+                        <i data-lucide="smartphone" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Mobile Development</h3>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Native iOS and Android development using Swift, Kotlin, or cross-platform solutions like React Native.
+                    </p>
+                    <div class="space-y-3 mb-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <li class="flex items-center gap-2 text-sm text-slate-300"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> App Store Optimization</li>
+                        <li class="flex items-center gap-2 text-sm text-slate-300"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> Offline-First Architecture</li>
+                    </div>
+                    <button class="w-full py-4 border border-slate-700 rounded-xl font-semibold hover:border-blue-500 hover:text-blue-500 transition-all flex items-center justify-center gap-2">
+                        Learn More <i data-lucide="plus" class="w-4 h-4"></i>
+                    </button>
+                    <div class="absolute inset-0 bg-blue-600/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 -z-10"></div>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="glass-card p-10 rounded-3xl group relative overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center text-blue-500 mb-8 service-icon-box">
+                        <i data-lucide="palette" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">UI/UX Design</h3>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Data-driven design processes that prioritize user engagement and conversion optimization.
+                    </p>
+                    <div class="space-y-3 mb-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <li class="flex items-center gap-2 text-sm text-slate-300"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> Design Systems</li>
+                        <li class="flex items-center gap-2 text-sm text-slate-300"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> User Testing & Research</li>
+                    </div>
+                    <button class="w-full py-4 border border-slate-700 rounded-xl font-semibold hover:border-blue-500 hover:text-blue-500 transition-all flex items-center justify-center gap-2">
+                        Learn More <i data-lucide="plus" class="w-4 h-4"></i>
+                    </button>
+                    <div class="absolute inset-0 bg-blue-600/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 -z-10"></div>
+                </div>
+
+                <!-- Software Development -->
+                <div class="glass-card p-10 rounded-3xl group relative overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center text-blue-500 mb-8 service-icon-box">
+                        <i data-lucide="code" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Software Dev</h3>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Enterprise software solutions, ERP integrations, and custom business management tools.
+                    </p>
+                    <div class="space-y-3 mb-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <li class="flex items-center gap-2 text-sm text-slate-300"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> Microservices</li>
+                        <li class="flex items-center gap-2 text-sm text-slate-300"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> Legacy Migration</li>
+                    </div>
+                    <button class="w-full py-4 border border-slate-700 rounded-xl font-semibold hover:border-blue-500 hover:text-blue-500 transition-all flex items-center justify-center gap-2">
+                        Learn More <i data-lucide="plus" class="w-4 h-4"></i>
+                    </button>
+                    <div class="absolute inset-0 bg-blue-600/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 -z-10"></div>
+                </div>
+
+                <!-- QA & Testing -->
+                <div class="glass-card p-10 rounded-3xl group relative overflow-hidden" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-16 h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center text-blue-500 mb-8 service-icon-box">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">QA & Testing</h3>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Rigorous automated and manual testing to ensure your software is bug-free and reliable.
+                    </p>
+                    <div class="space-y-3 mb-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <li class="flex items-center gap-2 text-sm text-slate-300"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> Penetration Testing</li>
+                        <li class="flex items-center gap-2 text-sm text-slate-300"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> Load Balancing Tests</li>
+                    </div>
+                    <button class="w-full py-4 border border-slate-700 rounded-xl font-semibold hover:border-blue-500 hover:text-blue-500 transition-all flex items-center justify-center gap-2">
+                        Learn More <i data-lucide="plus" class="w-4 h-4"></i>
+                    </button>
+                    <div class="absolute inset-0 bg-blue-600/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 -z-10"></div>
+                </div>
+
+                <!-- Digital Solutions -->
+                <div class="glass-card p-10 rounded-3xl group relative overflow-hidden" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-16 h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center text-blue-500 mb-8 service-icon-box">
+                        <i data-lucide="zap" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Digital Solutions</h3>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Comprehensive digital strategy, cloud transformation, and AI/ML implementation.
+                    </p>
+                    <div class="space-y-3 mb-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <li class="flex items-center gap-2 text-sm text-slate-300"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> Cloud Migration</li>
+                        <li class="flex items-center gap-2 text-sm text-slate-300"><i data-lucide="check" class="w-4 h-4 text-blue-500"></i> AI Integration</li>
+                    </div>
+                    <button class="w-full py-4 border border-slate-700 rounded-xl font-semibold hover:border-blue-500 hover:text-blue-500 transition-all flex items-center justify-center gap-2">
+                        Learn More <i data-lucide="plus" class="w-4 h-4"></i>
+                    </button>
+                    <div class="absolute inset-0 bg-blue-600/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 -z-10"></div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/services.js"></script>
+</body>
+</html>

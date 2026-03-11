@@ -1,0 +1,9 @@
+/* Careers Page Specific Styles */
+
+.btn-secondary {
+    @apply border-slate-700 hover:text-white transition-all;
+}
+
+#cv-form label:hover p {
+    color: #3b82f6;
+}

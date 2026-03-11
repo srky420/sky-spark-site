@@ -1,0 +1,19 @@
+/* Portfolio Page Specific Styles */
+
+.filter-btn {
+    @apply px-6 py-2 rounded-full border border-slate-800 text-slate-400 font-medium transition-all hover:border-blue-500 hover:text-white;
+}
+
+.filter-btn.active {
+    @apply bg-blue-600 border-blue-600 text-white shadow-lg shadow-blue-500/20;
+}
+
+.portfolio-item {
+    transition: all 0.5s ease;
+}
+
+.portfolio-item.hidden {
+    display: none;
+    opacity: 0;
+    transform: scale(0.9);
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | SkySpark</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { slate: { 950: '#0f172a', 900: '#1e293b' }, blue: { 600: '#3b82f6' } } } }
+        }
+    </script>
+    <!-- Assets -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<body class="bg-slate-950 text-slate-50">
+
+    <div id="header-placeholder"></div>
+
+    <main class="pt-32">
+        <section class="container mx-auto px-6 mb-16">
+            <div class="max-w-3xl" data-aos="fade-up">
+                <h1 class="text-5xl md:text-7xl font-black mb-8 text-gradient">Our Work</h1>
+                <p class="text-xl text-slate-400">
+                    A selection of high-impact projects where technology meets creativity to drive real business results.
+                </p>
+            </div>
+        </section>
+
+        <!-- Filters -->
+        <section class="container mx-auto px-6 mb-12">
+            <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="container mx-auto px-6 pb-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12" id="portfolio-grid">
+                
+                <!-- Project 1 (Web) -->
+                <div class="portfolio-item web" data-aos="fade-up">
+                    <div class="glass-card rounded-3xl overflow-hidden group">
+                        <div class="aspect-video relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80" alt="Fintech Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute top-6 left-6 flex gap-2">
+                                <span class="bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">React</span>
+                                <span class="bg-slate-800 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Node.js</span>
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-3xl font-bold mb-6">Fintech Enterprise Analytics</h3>
+                            <div class="grid grid-cols-3 gap-6 mb-8 text-sm">
+                                <div>
+                                    <h4 class="text-blue-500 font-bold mb-2 uppercase text-[10px]">Problem</h4>
+                                    <p class="text-slate-400">Fragmented data sources across global offices.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-blue-500 font-bold mb-2 uppercase text-[10px]">Solution</h4>
+                                    <p class="text-slate-400">Unified real-time dashboard with AI insights.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-blue-500 font-bold mb-2 uppercase text-[10px]">Result</h4>
+                                    <p class="text-slate-400">45% increase in operational efficiency.</p>
+                                </div>
+                            </div>
+                            <button class="btn-secondary w-full">View Case Study</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Mobile) -->
+                <div class="portfolio-item mobile" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card rounded-3xl overflow-hidden group">
+                        <div class="aspect-video relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80" alt="Heath App" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute top-6 left-6 flex gap-2">
+                                <span class="bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Swift</span>
+                                <span class="bg-slate-800 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Firebase</span>
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-3xl font-bold mb-6">Vitality Health Tracker</h3>
+                            <div class="grid grid-cols-3 gap-6 mb-8 text-sm">
+                                <div>
+                                    <h4 class="text-blue-500 font-bold mb-2 uppercase text-[10px]">Problem</h4>
+                                    <p class="text-slate-400">Low user retention on previous health apps.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-blue-500 font-bold mb-2 uppercase text-[10px]">Solution</h4>
+                                    <p class="text-slate-400">Gamified UI with personalized AI coaching.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-blue-500 font-bold mb-2 uppercase text-[10px]">Result</h4>
+                                    <p class="text-slate-400">80% month-over-month user growth.</p>
+                                </div>
+                            </div>
+                            <button class="btn-secondary w-full">View Case Study</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (UI) -->
+                <div class="portfolio-item ui" data-aos="fade-up">
+                    <div class="glass-card rounded-3xl overflow-hidden group">
+                        <div class="aspect-video relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&q=80" alt="Streaming UX" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute top-6 left-6 flex gap-2">
+                                <span class="bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Figma</span>
+                                <span class="bg-slate-800 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Motion</span>
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-3xl font-bold mb-6">Nebula Streaming UX</h3>
+                            <div class="grid grid-cols-3 gap-6 mb-8 text-sm">
+                                <div>
+                                    <h4 class="text-blue-500 font-bold mb-2 uppercase text-[10px]">Problem</h4>
+                                    <p class="text-slate-400">Complicated navigation for elderly users.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-blue-500 font-bold mb-2 uppercase text-[10px]">Solution</h4>
+                                    <p class="text-slate-400">Simplified, voice-first navigation system.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-blue-500 font-bold mb-2 uppercase text-[10px]">Result</h4>
+                                    <p class="text-slate-400">Awarded "Design of the Year" 2025.</p>
+                                </div>
+                            </div>
+                            <button class="btn-secondary w-full">View Case Study</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Web) -->
+                <div class="portfolio-item web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card rounded-3xl overflow-hidden group">
+                        <div class="aspect-video relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80" alt="E-commerce" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute top-6 left-6 flex gap-2">
+                                <span class="bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Next.js</span>
+                                <span class="bg-slate-800 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Shopify</span>
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-3xl font-bold mb-6">Velvet Rogue Marketplace</h3>
+                            <div class="grid grid-cols-3 gap-6 mb-8 text-sm">
+                                <div>
+                                    <h4 class="text-blue-500 font-bold mb-2 uppercase text-[10px]">Problem</h4>
+                                    <p class="text-slate-400">Slow load times leading to high bounce rate.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-blue-500 font-bold mb-2 uppercase text-[10px]">Solution</h4>
+                                    <p class="text-slate-400">Server-side rendered headless storefront.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-blue-500 font-bold mb-2 uppercase text-[10px]">Result</h4>
+                                    <p class="text-slate-400">Loading speed improved by 300%.</p>
+                                </div>
+                            </div>
+                            <button class="btn-secondary w-full">View Case Study</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+</body>
+</html>
